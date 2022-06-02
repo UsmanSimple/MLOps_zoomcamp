@@ -81,3 +81,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     run(args.raw_data_path, args.dest_path)
+
