@@ -25,7 +25,7 @@ def run(data_path, num_trials):
     def objective(params):
     
         
-        with mlflow.start_run(experiment_id=2):
+        with mlflow.start_run():
             mlflow.set_tag("model", "random_forest")
             mlflow.log_params(params)
 
