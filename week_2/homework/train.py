@@ -14,7 +14,7 @@ def load_pickle(filename: str):
 
 def run(data_path):
 
-    mlflow.set_tracking_uri("sqlite:///homework.db")
+    mlflow.set_tracking_uri("sqlite:///assignment.db")
 
     mlflow.set_experiment("homework_experiment")
 
