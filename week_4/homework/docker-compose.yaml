@@ -1,0 +1,10 @@
+version: '3.5' # docker version
+
+services: # this codifies an approach of how the image should be running such as database, port number, executable scripts and so on 
+
+  ride_image: # The ride_image service uses an image that’s built from the Dockerfile in the current directory.
+    build:
+      context: .
+      dockerfile: ./Dockerfile 
+    command: [ "python","./starter.py","fhv","2021",'4' ]
+    

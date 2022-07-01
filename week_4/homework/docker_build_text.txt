@@ -1,0 +1,8 @@
+# we can define args with our build command of docker-compose on our terminal
+docker-compose build --build-arg AWS_ACCESS_KEY_ID="vjhnklvnklnsjknzjbklsnsbkln" --build-arg AWS_SECRET_ACCESS_KEY="bkbannoshvosklsnbjksbsjkbvjkdkj" --build-arg AWS_DEFAULT_REGION="us-west-1"
+
+# we can use this to bring our stack up
+docker-compose up -d
+
+# we can now check inside our container
+docker exec -it -name-of-the-containe-generated-with-docker-ps bash
